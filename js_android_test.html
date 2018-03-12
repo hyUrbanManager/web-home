@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript 调用 Android 方法</title>
+
+    <script language="JavaScript">
+        function getValue() {
+            var msg = this.form1.msg.value;
+            JsAndroidToast.showToast(msg);
+        }
+    </script>
+
+</head>
+<body>
+
+<input type="button" value="点击显示toast 你好" onclick="JsAndroidToast.showToast();">
+
+<form name="form1">
+    <input type="text" name="msg" placeholder="输入要显示的消息">
+    <input type="submit" value="提交" onclick="getValue()">
+</form>
+
+</body>
+</html>

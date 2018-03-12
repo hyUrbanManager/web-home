@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <!--jquery-->
+    <script type="text/javascript" src="scripts/jq/jquery-3.2.1.min.js"></script>
+    <!--获取ip后台地址-->
+    <script src='http://pv.sohu.com/cityjson?ie=utf-8'></script>
+</head>
+
+<script>
+    function showIP() {
+        var ip = returnCitySN.cip;
+        var city = returnCitySN.cname;
+        var text = '您来自 ' + ip + ', 城市: ' + city + '。';
+        $('#where_u_from').text(text);
+    }
+
+    function showAnimation() {
+        $('body').append("<script src='scripts/ball.js'><\/script>");
+    }
+
+</script>
+
+
+<body>
+<div style="height: 45px">
+    <h2 id='where_u_from'>
+        <button type="button" class="s_btn" onclick="showIP()">显示你的IP</button>
+    </h2>
+</div>
+
+<!--<button type="button" id="ba" onclick="showAnimation()">加载动画，需要耗费4k流量</button>-->
+
+<h1><a href="app/bs.apk">毕业设计app下载(1.8M)</a></h1>
+<h1><a href="app/mqttchatlite.apk">mqtt轻聊下载(840k)实现实时聊天</a></h1>
+<h1><a href="app/networkcancer.apk">网络毒瘤下载(963k)实现网络轰炸</a></h1>
+<h2>
+    Android端打开APP:<p></p>
+    <a class='appLink' href='weixin://'>微信</a>
+    <a class='appLink' href='mqq://'>QQ</a>
+    <a class='appLink' href='taobao://'>淘宝</a>
+    <a class='appLink' href='openjd://'>京东</a>
+    <a class='appLink' href='zhihu://'>知乎</a>
+    <a class='appLink' href='sinaweibo://browser/'>微博</a>
+
+    <a class='appLink' href='ofoapp://'>ofo</a>
+    <a class='appLink' href='orpheus://'>网易云音乐</a>
+    <a class='appLink' href='kugou://'>酷狗音乐</a>
+
+
+</h2>
+
+<!--<script src="scripts/ball.js"></script>-->
+</body>

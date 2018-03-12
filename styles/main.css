@@ -1,0 +1,23 @@
+html, body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 1%;
+    background-color: #F2F2F2;
+}
+
+.s_btn {
+    width: 100px;
+    height: 45px;
+    color: #fff;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-style: none;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+
+.appLink {
+    margin-left: 10px;
+    margin-right: 10px;
+}
