@@ -285,6 +285,6 @@ function gotoxyyView() {
 }
 //跳转到小铛铛作品
 function gotoxddView() {
-    document.querySelector("xddView").scrollIntoView();
+    document.querySelector("#xddView").scrollIntoView();
 }
 

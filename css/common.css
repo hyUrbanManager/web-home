@@ -1,10 +1,6 @@
-body{
+#body{
     overflow-x:hidden;
     background-color: #F5E8D5;
-}
-a{
-    text-decoration: none;
-    color: white;
 }
 h2,p{
     color: white;
@@ -18,7 +14,7 @@ h1,h3,h4,h5,h6{
     left: 0px;
     z-index:1;
 }
-#topTb{
+#body #topTb{
     width: 100%;
     height: 40px;
     position: absolute;
@@ -33,6 +29,9 @@ h1,h3,h4,h5,h6{
     border-bottom: 1px solid #ededed;
     z-index: 2;
 }
+#topTb a{
+    text-decoration: none;
+}
 #topId{
     position: absolute;
     top: 0px;
@@ -41,6 +40,11 @@ h1,h3,h4,h5,h6{
     height: 40px;
     font-size: large;
     color: #1d6888;
+}
+#whereUFrom{
+    position: absolute;
+    top: 1px;
+    left: 115px;
 }
 .outLeft-Png{
     position: absolute;
@@ -65,11 +69,9 @@ h1,h3,h4,h5,h6{
     z-index: 5;
 }
 #container{
-    position: absolute;
-    left: 140px;
+    position: relative;
     top: 100px;
-    width: 1260px;
-    height: 700px;
+    padding-bottom: 30px;
     background-color: #fff9ff;
     opacity: 0.8;
     z-index: 2;
@@ -77,26 +79,19 @@ h1,h3,h4,h5,h6{
 .contain-h{
     text-indent: 20px;
     background-color: crimson;
-    width: 1260px;
-    height: 35px;
 }
 .contain-xyy{
-    width: 1220px;
-    height: 170px;
-    padding: 20px;
-    /*background-color: #1d6888;*/
-}
-.contain-xyy a div{
     width: 170px;
     height: 170px;
-    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
     float: left;
 }
 #container a .cn{
     position: relative;
     overflow: hidden;
 }
-#container .xyy-work{
+#container .contain-xyy .xyy-work,#container .contain-xdd .xyy-work{
     width: 100%;
     height: 170px;
     padding: 0px;
@@ -107,57 +102,43 @@ h1,h3,h4,h5,h6{
     background-color: rgba(0,0,0,0.5);
 }
 .contain-xyy .xyy-work h2,.contain-xyy .xyy-work h4{
-    margin: 20px;
     text-align: center;
     color: white;
 }
-.contain-xdd .xyy-work h2,.contain-xdd .xyy-work h4{
+.contain-xdd .xyy-work h3,.contain-xdd .xyy-work h5{
     text-align: center;
-    padding-top: 15px;
-    margin: 0px;
+    margin-top: 15px;
     color: white;
 }
 .andContent-h{
-    position: relative;
-    top:0px;
-    width:1260px;
-    height: 30px;
     text-indent: 20px;
     color: #ff2446;
     opacity: 0.8;
 }
 .andContent{
-    width: 1220px;
-    height: 80px;
-    padding: 20px;
+    margin: 0px;
 }
 #container .andContent div{
     width: 80px;
     height: 80px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
     float: left;
 }
 .contain-xdd{
-    width: 1220px;
-    height: 164px;
-    padding: 20px;
+    padding: 0px;
 }
 #container .contain-xdd a div{
-    width: 290px;
-    height: 164px;
-    margin-right: 20px;
-    float: left;
-}
-#container .contain-xdd a #xdd-work{
-    width: 290px;
-    height: 164px;
-    margin-right: 0px;
+    width: 250px;
+    height: 141px;
+    margin-top: 20px;
+    margin-left: 33px;
     float: left;
 }
 #version{
-    position: absolute;
-    top: 700px;
+    position: relative;
+    top: 100px;
     width: 100%;
-    height: 200px;
-    background-color: #F5E8D5;
+    height: 100px;
+    background-color: #f5e8d5;
 }
